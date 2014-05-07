@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Blogging With Github Pages and Poole's Hyde Theme
 ---
 
