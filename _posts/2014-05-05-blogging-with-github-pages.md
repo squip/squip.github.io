@@ -11,4 +11,8 @@ My new blog is built with [Github Pages](https://pages.github.com/) and [Jekyll]
 
 This article is the first post, and in it I describe how I went from zero to a nice developer web site.
 
+# Notes
 
+```bash
+jeckyll serve -w # serve the blog locally # http://localhost:4000
+```
