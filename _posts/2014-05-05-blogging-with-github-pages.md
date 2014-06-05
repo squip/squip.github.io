@@ -4,7 +4,7 @@ comments: true
 title: Blogging With Github Pages and Poole's Hyde Theme
 ---
 
-_Note: As of 5/5/2014, this post is still a work in progress_
+_Note: As of 6/2/2014, this post is still a work in progress_
 
 
 My new blog is built with [Github Pages](https://pages.github.com/) and [Jekyll](http://jekyllrb.com/) using [Poole's](http://getpoole.com/) [Hyde](http://hyde.getpoole.com/) template and the [Disqus](http://disqus.com/) discussion system.
