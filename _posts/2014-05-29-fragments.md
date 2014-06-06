@@ -32,7 +32,7 @@ This example app demonstrates five styles of communicating data between Activiti
 * [SetArguments](https://github.com/johnnylambada/andevcon-2014-jl/tree/master/fragment-comms/src/main/java/andevcon14/FragmentComms/Types/SetArguments) - Using the setArguments call on the Fragment itself to give it arguments available to it during the entire lifecycle.
 * [LocalBroadcast](https://github.com/johnnylambada/andevcon-2014-jl/tree/master/fragment-comms-support/src/main/java/andevcon14/FragmentCommsSupport/Types/LocalBroadcast) - Available only when using the Support Library, LocalBroadcast enables the Observer Pattern without the need for the participants to keep track of Observers.
 
-## [fragment-comms-support](https://github.com/johnnylambada/andevcon-2014-jl/tree/master/fragment-comms-support/src/main/java/andevcon14/FragmentComms)
+## [fragment-comms-support](https://github.com/johnnylambada/andevcon-2014-jl/tree/master/fragment-comms-support/src/main/java/andevcon14/FragmentCommsSupport)
 
 This project is just like the fragment-comms project except that it uses the support library.
 
