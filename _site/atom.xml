@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>CODE SALSA</title>
+ <link href="http://eriksorensen.github.io/atom.xml" rel="self"/>
+ <link href="http://eriksorensen.github.io/"/>
+ <updated>2014-10-12T18:08:26-04:00</updated>
+ <id>http://eriksorensen.github.io</id>
+ <author>
+   <name>ESSORENSEN</name>
+   <email></email>
+ </author>
+
+ 
+ <entry>
+   <title>Why suckin pussy is good.</title>
+   <link href="http://eriksorensen.github.io/2014/10/05/sucking-huge-dongs/"/>
+   <updated>2014-10-05T00:00:00-04:00</updated>
+   <id>http://eriksorensen.github.io/2014/10/05/sucking-huge-dongs</id>
+   <content type="html">&lt;p&gt;&lt;em&gt;Note: As of 6/2/2014, this post is still a work in progress&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;My new blog is built with big vaginal belches. &lt;a href=&quot;https://pages.github.com/&quot;&gt;Github Pages&lt;/a&gt; and &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; using &lt;a href=&quot;http://getpoole.com/&quot;&gt;Poole&amp;#39;s&lt;/a&gt; &lt;a href=&quot;http://hyde.getpoole.co%0Am/&quot;&gt;Hyde&lt;/a&gt; template and the &lt;a href=&quot;http://disqus.com/&quot;&gt;Disqus&lt;/a&gt; discussion system.&lt;/p&gt;
+
+&lt;p&gt;This article is the first post, and in it I describe how I went from zero to a nice developer web site.&lt;/p&gt;
+
+&lt;h1&gt;Notes&lt;/h1&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;jeckyll serve -w # serve the blog locally # http://localhost:4000
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Node Tutorial - hello world</title>
+   <link href="http://eriksorensen.github.io/2014/06/04/node-1/"/>
+   <updated>2014-06-04T00:00:00-04:00</updated>
+   <id>http://eriksorensen.github.io/2014/06/04/node-1</id>
+   <content type="html">&lt;p&gt;This post is the first in a series that explains how I am building out a web app using &lt;a href=&quot;http://nodejs.org/&quot;&gt;node&lt;/a&gt; and &lt;a href=&quot;http://expressjs.com/&quot;&gt;express&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The object of this first post is just to get to a working &amp;quot;localhost:4000/hello.txt&amp;quot;. It&amp;#39;s a condensed version of the first part of the &lt;a href=&quot;http://expressjs.com/guide.html&quot;&gt;express guide&lt;/a&gt;. I don&amp;#39;t go into a lot of detail about the hows and whys, but if you follow along on your Mac, you should be able to get where I&amp;#39;m going. All along the way I am saving files to github, but I&amp;#39;m not showing that part because it&amp;#39;s not necessary for my purposes here -- I assume you know how to use git.&lt;/p&gt;
+
+&lt;h2&gt;Install Node&lt;/h2&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;brew install node&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Build the directory structure of the project&lt;/h2&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;export TOPDIR=/some/path/to/your/project
+mkdir -p $TOPDIR
+cd $TOPDIR&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Create the package.json file&lt;/h2&gt;
+
+&lt;p&gt;It should look like this:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-json&quot; data-lang=&quot;json&quot;&gt;{
+  &amp;quot;name&amp;quot;: &amp;quot;my-project&amp;quot;,
+  &amp;quot;description&amp;quot;: &amp;quot;my project&amp;quot;,
+  &amp;quot;version&amp;quot;: &amp;quot;0.0.1&amp;quot;,
+  &amp;quot;dependencies&amp;quot;: {
+    &amp;quot;express&amp;quot;: &amp;quot;4.x&amp;quot;
+  }
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Install local copies of dependencies&lt;/h2&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;npm install&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Create the simplest app possible&lt;/h2&gt;
+
+&lt;p&gt;It should look like this:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;var express = require(&amp;#39;express&amp;#39;);
+var app = express();
+app.get(&amp;#39;/hello.txt&amp;#39;, function(req, res){
+      res.send(&amp;#39;Hello World&amp;#39;);
+});
+var server = app.listen(3000, function() {
+        console.log(&amp;#39;Listening on port %d&amp;#39;, server.address().port);
+});
+EOF&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Start it up&lt;/h2&gt;
+
+&lt;p&gt;Once you&amp;#39;ve started the app, point your browser at http://localhost:3000/hello.txt to see &amp;#39;Hello World&amp;#39;.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;node app&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>AnDevCon talk on Fragments</title>
+   <link href="http://eriksorensen.github.io/2014/05/29/fragments/"/>
+   <updated>2014-05-29T00:00:00-04:00</updated>
+   <id>http://eriksorensen.github.io/2014/05/29/fragments</id>
+   <content type="html">&lt;p&gt;&lt;em&gt;I gave a talk on Android Fragments on May 29, 2014 at AnDevCon in Boston. The talk was well attended and well received. You can download the &lt;a href=&quot;https://github.com/johnnylambada/andevcon-2014-jl/blob/master/slides/fragments.pdf&quot;&gt;slide deck&lt;/a&gt; from the presentation if you like.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Life used to be simple. We had Activities and they were good. You could define all of your app&amp;#39;s UI in a layout and animate it in an Activity. Then Apple brought out the iPad and Google answered with Honeycomb. Things got complex. Google realized that tablets would drive the need for developers to reuse parts of their UI, and the answer was the Fragment class. Fragments enable developers to use bits of UI along with the associated business logic in various parts of their app or even in multiple apps.&lt;/p&gt;
+
+&lt;p&gt;The Slide deck has a matching &lt;a href=&quot;https://github.com/johnnylambada/andevcon-2014-jl&quot;&gt;github repository&lt;/a&gt; that has several really useful example projects in it. The easiest way to build the examples is with Android Studio and gradle.&lt;/p&gt;
+
+&lt;h2&gt;&lt;a href=&quot;https://github.com/johnnylambada/andevcon-2014-jl/tree/master/fragment-logged/src/main/java/andevcon14/FragmentLogged&quot;&gt;fragment-logged&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;This example app uses native fragments to demonstrate several concepts:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Dynamic vs Static Fragments: Static fragments are created with the &lt;code&gt;&amp;lt;fragment&amp;gt;&lt;/code&gt; tag in a layout. Dynamic fragments are added at run time to a &lt;code&gt;&amp;lt;frame&amp;gt;&lt;/code&gt; tag.&lt;/li&gt;
+&lt;li&gt;Using a Bundle to store Activity state information throughout the Activity&amp;#39;s lifecycle.&lt;/li&gt;
+&lt;li&gt;The interrelationship of the Activity lifecycle with the Fragment lifecycle. There is a really useful set of classes (&lt;a href=&quot;https://github.com/johnnylambada/andevcon-2014-jl/blob/master/fragment-logged/src/main/java/andevcon14/FragmentLogged/CallLogger.java&quot;&gt;CallLogger&lt;/a&gt;, &lt;a href=&quot;https://github.com/johnnylambada/andevcon-2014-jl/blob/master/fragment-logged/src/main/java/andevcon14/FragmentLogged/LoggedActivity.java&quot;&gt;LoggedActivity&lt;/a&gt; and &lt;a href=&quot;https://github.com/johnnylambada/andevcon-2014-jl/blob/master/fragment-logged/src/main/java/andevcon14/FragmentLogged/LoggedFragment.java&quot;&gt;LoggedFragment&lt;/a&gt;) that enable you to log calls from lifecycle events without adding any code to your Activities and Fragments themselves.&lt;/li&gt;
+&lt;li&gt;How the Back button and configuration changes (screen rotation) affect the Activity and Fragment lifecycles.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2&gt;&lt;a href=&quot;https://github.com/johnnylambada/andevcon-2014-jl/tree/master/fragment-comms/src/main/java/andevcon14/FragmentComms&quot;&gt;fragment-comms&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;This example app demonstrates five styles of communicating data between Activities and Fragments.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/fragment-comms-chart.jpg&quot; alt=&quot;Fragment Communication Chart&quot;&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/johnnylambada/andevcon-2014-jl/tree/master/fragment-comms/src/main/java/andevcon14/FragmentComms/Types/ActivityIntent&quot;&gt;ActivityIntent&lt;/a&gt; - How to communicate to a fragment through the Intent that started the Activity.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/johnnylambada/andevcon-2014-jl/tree/master/fragment-comms/src/main/java/andevcon14/FragmentComms/Types/FactoryMethod&quot;&gt;FactoryMethod&lt;/a&gt; - Communicate build arguments to a Fragment in a way that will survive the Activity and Fragment lifecycles.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/johnnylambada/andevcon-2014-jl/tree/master/fragment-comms/src/main/java/andevcon14/FragmentComms/Types/ObserverPattern&quot;&gt;ObserverPattern&lt;/a&gt; - Two way communication between any combination of multiple Fragments and Activities using the standard Java Observer pattern.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/johnnylambada/andevcon-2014-jl/tree/master/fragment-comms/src/main/java/andevcon14/FragmentComms/Types/LayoutElements&quot;&gt;LayoutElements&lt;/a&gt; - Communicate static build arguments to a Fragment by placing them in the Layout.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/johnnylambada/andevcon-2014-jl/tree/master/fragment-comms/src/main/java/andevcon14/FragmentComms/Types/SetArguments&quot;&gt;SetArguments&lt;/a&gt; - Using the setArguments call on the Fragment itself to give it arguments available to it during the entire lifecycle.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/johnnylambada/andevcon-2014-jl/tree/master/fragment-comms-support/src/main/java/andevcon14/FragmentCommsSupport/Types/LocalBroadcast&quot;&gt;LocalBroadcast&lt;/a&gt; - Available only when using the Support Library, LocalBroadcast enables the Observer Pattern without the need for the participants to keep track of Observers.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;&lt;a href=&quot;https://github.com/johnnylambada/andevcon-2014-jl/tree/master/fragment-comms-support/src/main/java/andevcon14/FragmentCommsSupport&quot;&gt;fragment-comms-support&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;This project is just like the fragment-comms project except that it uses the support library.&lt;/p&gt;
+
+&lt;h2&gt;&lt;a href=&quot;https://github.com/johnnylambada/andevcon-2014-jl/tree/master/hall-of-mirrors/src/main/java/andevcon14/HallOfMirrors&quot;&gt;hall-of-mirrors&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;The hall-of-mirrors example demonstrates that Fragments can be nested within other Fragments.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>AnDevCon talk on Android Studio</title>
+   <link href="http://eriksorensen.github.io/2014/05/28/android-studio/"/>
+   <updated>2014-05-28T00:00:00-04:00</updated>
+   <id>http://eriksorensen.github.io/2014/05/28/android-studio</id>
+   <content type="html">&lt;p&gt;I gave a talk on Android Studio on May 28, 2014 at AnDevCon in Boston. The talk was well attended and well received. You can download the &lt;a href=&quot;https://github.com/johnnylambada/andevcon-2014-jl/blob/master/slides/android-studio.pdf&quot;&gt;slide deck&lt;/a&gt; from the presentation if you like.&lt;/p&gt;
+
+&lt;p&gt;This post reemphasizes my main point during the talk.&lt;/p&gt;
+
+&lt;h2&gt;The best reason to switch to Android Studio today is Gradle integration.&lt;/h2&gt;
+
+&lt;p&gt;Even though it&amp;#39;s still considered Alpha software (as of 6/5/2014), the Android Gradle plugin is ready for prime time, and is much better than the current Android Ant plugin. Gradle builds are somewhat faster than Ant builds, and there are a lot more features. The best reason to use Gradle with Android Studio is the you only have to worry about one build. Normally you have to get your command line build working if you want continuous integration, and your IDE build is separate. It&amp;#39;s not difficult to maintain both on simple projects, but on complex projects it can be tedious. Adding a new library can easily break everyone&amp;#39;s IDE build, so there is a tendency to leave things alone once a project gets to a certain size.&lt;/p&gt;
+
+&lt;p&gt;Because Android Studio uses your Gradle project to build, once you have the Gradle build working, you also have an Android Studio project set up. All the developer has to do is import the top level &lt;code&gt;build.gradle&lt;/code&gt; file and away he goes.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Blogging With Github Pages and Poole's Hyde Theme</title>
+   <link href="http://eriksorensen.github.io/2014/05/05/blogging-with-github-pages/"/>
+   <updated>2014-05-05T00:00:00-04:00</updated>
+   <id>http://eriksorensen.github.io/2014/05/05/blogging-with-github-pages</id>
+   <content type="html">&lt;p&gt;&lt;em&gt;Note: As of 6/2/2014, this post is still a work in progress&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;My new blog is built with &lt;a href=&quot;https://pages.github.com/&quot;&gt;Github Pages&lt;/a&gt; and &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; using &lt;a href=&quot;http://getpoole.com/&quot;&gt;Poole&amp;#39;s&lt;/a&gt; &lt;a href=&quot;http://hyde.getpoole.com/&quot;&gt;Hyde&lt;/a&gt; template and the &lt;a href=&quot;http://disqus.com/&quot;&gt;Disqus&lt;/a&gt; discussion system.&lt;/p&gt;
+
+&lt;p&gt;This article is the first post, and in it I describe how I went from zero to a nice developer web site.&lt;/p&gt;
+
+&lt;h1&gt;Notes&lt;/h1&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;jeckyll serve -w # serve the blog locally # http://localhost:4000
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
+ </entry>
+ 
+
+</feed>
