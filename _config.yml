@@ -9,11 +9,11 @@ permalink:        pretty
 title:            CODE SALSA
 tagline:          'Its good for you.'
 description:      'A fresh mix of ideas, projects, and spicy bits of inspiration.'
-url:              http://eriksorensen.github.io
+url:              http://squip.github.io
 
 author:
   name:           'ESSORENSEN'
-  url:            https://eriksorensen.github.io
+  url:            https://squip.github.io
 
 paginate:         2
 
@@ -21,7 +21,7 @@ paginate:         2
 version:          2.0.0
 
 github:
-  repo:           https://github.com/eriksorensen/eriksorensen.github.io
+  repo:           https://github.com/squip/squip.github.io
 
 # Disqus
 disqus:
