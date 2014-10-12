@@ -1,28 +1,28 @@
 # Dependencies
 markdown:         redcarpet
-pygments:         true
+highlighter:         true
 
 # Permalinks
 permalink:        pretty
 
 # Setup
-title:            johnnylambada
-tagline:          'Thoughts on development, politics, raising kids and life.'
-description:      'John is a professional developer specializing in Android.'
-url:              http://johnnylambada.com
+title:            CODE SALSA
+tagline:          'Its good for you.'
+description:      'A fresh mix of ideas, projects, and spicy bits of inspiration.'
+url:              http://eriksorensen.github.io
 
 author:
-  name:           'John Lombardo'
-  url:            https://johnnylambada
+  name:           'ESSORENSEN'
+  url:            https://eriksorensen.github.io
 
-paginate:         5
+paginate:         2
 
 # Custom vars
 version:          2.0.0
 
 github:
-  repo:           https://github.com/johnnylambada/johnnylambada.github.io
+  repo:           https://github.com/eriksorensen/eriksorensen.github.io
 
 # Disqus
 disqus:
-  shortname:      johnnylambada
+  shortname:      essorensen
