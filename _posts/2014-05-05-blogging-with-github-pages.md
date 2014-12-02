@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: Blogging With Github Pages and Poole's Hyde Theme
+title: Predicting Box Office Success of Movie Remakes
 ---
 
 _Note: As of 6/2/2014, this post is still a work in progress_
