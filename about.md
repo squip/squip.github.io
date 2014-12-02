@@ -14,7 +14,5 @@ I will be using this blog to chronicle my projects in data science, and to share
 
 Follow me:
 
-<p class="message">
 * [Twitter](http://twitter.com/essorensen)
 * [LinkedIn](http://www.linkedin.com/pub/erik-sorensen/12/ab1/460/)
-</p>
