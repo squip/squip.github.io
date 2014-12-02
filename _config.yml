@@ -6,9 +6,9 @@ highlighter:         true
 permalink:        pretty
 
 # Setup
-title:            CODE SALSA
+title:            Erik Sorensen
 tagline:          'Its good for you.'
-description:      'A fresh mix of ideas, projects, and spicy bits of inspiration.'
+description:      'A living chronicle of my projects in data science, and anything else I find inspiring and fit to post.'
 url:              http://squip.github.io
 
 author:
@@ -26,3 +26,4 @@ github:
 # Disqus
 disqus:
   shortname:      essorensen
+
