@@ -5,7 +5,7 @@ title: About
 
 My name is Erik, sometimes called Skip.  
 
-I am a San Francisco native, and an avid enthusiast for entreprenurship, the tech startup space, and learning new things at every possible opportunity.  
+I am a San Francisco native, and an avid enthusiast for entrepreneurship, the tech startup space, and learning new things at every possible opportunity.  
 
 When I'm not working on data science projects, I am either playing music, or somewhere in the outdoors biking, hiking, skiing or taking part in some other nature-centric activity.  
 
